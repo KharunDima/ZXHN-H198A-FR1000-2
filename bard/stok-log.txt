@@ -1,0 +1,191 @@
+===================================================================
+     		MT7621   stage1 code 10:33:11 (ASIC)
+     		CPU=50000000 HZ BUS=16666666 HZ
+==================================================================
+Change MPLL source from XTAL to CR...
+do MEMPLL setting..
+MEMPLL Config : 0x11100000
+3PLL mode + External loopback
+=== XTAL-40Mhz === DDR-1200Mhz ===
+PLL2 FB_DL: 0x15, 1/0 = 519/505 55000000
+PLL3 FB_DL: 0x16, 1/0 = 623/401 59000000
+PLL4 FB_DL: 0x18, 1/0 = 656/368 61000000
+do DDR setting..[00320381]
+Apply DDR3 Setting...(use customer AC)
+          0    8   16   24   32   40   48   56   64   72   80   88   96  104  112  120
+      --------------------------------------------------------------------------------
+0000:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0001:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0002:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0003:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0004:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0005:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0006:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0007:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0008:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0009:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+000A:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+000B:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+000C:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+000D:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    1    1
+000E:|    0    0    0    0    0    0    0    0    1    1    1    1    1    1    1    1
+000F:|    0    0    0    1    1    1    1    1    1    1    1    1    1    0    0    0
+0010:|    1    1    1    1    1    1    1    1    0    0    0    0    0    0    0    0
+0011:|    1    1    1    0    0    0    0    0    0    0    0    0    0    0    0    0
+0012:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0013:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0014:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0015:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0016:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0017:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0018:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+0019:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001A:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001B:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001C:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001D:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001E:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+001F:|    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+rank 0 coarse = 15
+rank 0 fine = 64
+B:|    0    0    0    0    0    0    0    0    1    1    1    0    0    0    0    0
+opt_dle value:9
+DRAMC_R0DELDLY[018]=00001D1E
+==================================================================
+		RX	DQS perbit delay software calibration 
+==================================================================
+1.0-15 bit dq delay value
+==================================================================
+bit|     0  1  2  3  4  5  6  7  8  9
+--------------------------------------
+0 |    12 8 11 10 9 9 9 7 6 7 
+10 |    8 10 9 11 8 9 
+--------------------------------------
+
+==================================================================
+2.dqs window
+x=pass dqs delay value (min~max)center 
+y=0-7bit DQ of every group
+input delay:DQS0 =30 DQS1 = 29
+==================================================================
+bit	DQS0	 bit      DQS1
+0  (1~58)29  8  (1~54)27
+1  (1~58)29  9  (1~58)29
+2  (1~57)29  10  (1~56)28
+3  (1~57)29  11  (1~52)26
+4  (1~57)29  12  (1~54)27
+5  (1~59)30  13  (1~56)28
+6  (1~58)29  14  (0~58)29
+7  (1~59)30  15  (1~54)27
+==================================================================
+3.dq delay value last
+==================================================================
+bit|    0  1  2  3  4  5  6  7  8   9
+--------------------------------------
+0 |    13 9 12 11 10 9 10 7 8 7 
+10 |    9 13 11 12 8 11 
+==================================================================
+==================================================================
+     TX  perbyte calibration 
+==================================================================
+DQS loop = 15, cmp_err_1 = ffff0000 
+dqs_perbyte_dly.last_dqsdly_pass[0]=15,  finish count=1 
+dqs_perbyte_dly.last_dqsdly_pass[1]=15,  finish count=2 
+DQ loop=15, cmp_err_1 = ffff01fa
+DQ loop=14, cmp_err_1 = ffff01aa
+DQ loop=13, cmp_err_1 = ffff00a2
+dqs_perbyte_dly.last_dqdly_pass[1]=13,  finish count=1 
+DQ loop=12, cmp_err_1 = ffff0082
+DQ loop=11, cmp_err_1 = ffff0000
+dqs_perbyte_dly.last_dqdly_pass[0]=11,  finish count=2 
+byte:0, (DQS,DQ)=(a,8)
+byte:1, (DQS,DQ)=(9,8)
+20,data:9a
+[EMI] DRAMC calibration passed
+
+===================================================================
+     		MT7621   stage1 code done 
+     		CPU=50000000 HZ BUS=16666666 HZ
+===================================================================
+
+
+U-Boot 1.1.3 (Jun 30 2020 - 15:20:16)
+
+Board: Ralink APSoC DRAM:  128 MB
+relocate_code Pointer at: 87fa8000
+
+Config XHCI 40M PLL 
+Allocate 16 byte aligned buffer: 87fdee30
+Enable NFI Clock
+# MTK NAND # : Use HW ECC
+NAND ID [EF F1 00 95 00]
+Device not found, ID: eff1
+Not Support this Device! 
+chip_mode=00000001
+Support this Device in MTK table! eff1 
+select_chip
+[NAND]select ecc bit:4, sparesize :64 spare_per_sector=16
+Signature matched and data read!
+load_fact_bbt success 1023
+load fact bbt success
+[mtk_nand] probe successfully!
+mtd->writesize=2048 mtd->oobsize=64,	mtd->erasesize=131072  devinfo.iowidth=8
+.*** Warning - bad CRC, using default environment
+
+============================================ 
+Ralink UBoot Version: 5.0.0.0
+-------------------------------------------- 
+ASIC MT7621A DualCore (MAC to MT7530 Mode)
+DRAM_CONF_FROM: Auto-Detection 
+DRAM_TYPE: DDR3 
+DRAM bus: 16 bit
+Xtal Mode=3 OCP Ratio=1/3
+Flash component: NAND Flash
+Date:Jun 30 2020  Time:15:20:16
+============================================ 
+icache: sets:256, ways:4, linesz:32 ,total:32768
+dcache: sets:256, ways:4, linesz:32 ,total:32768 
+
+ ##### The CPU freq = 880 MHZ #### 
+ estimate memory size =128 Mbytes
+#Reset_MT7530
+set LAN/WAN WLLLL
+Info: get a version head, the integrality is OK!
+Info: start_block:[120],kernel_magic_head at :[120], i:[220],ver_blocks:[100]
+Info: get a version head, the integrality is OK!
+Info: start_block:[400],kernel_magic_head at :[400], i:[500],ver_blocks:[100]
+
+*** Press 1 means entering boot mode***
+*** Press 2 means entering testing mode***
+*** Press 3 means entering norm mode***
+ 0 
+Entering norm mode ...
+Booting image ...... 
+ imglen is 0xc80000 
+..........................................................................................................................................................................................................Info: start_block:120
+Info: bad blocks before fs:0
+Info: pL->dwFsStartPhyAddr:10a0000
+Info: pL->fs_len:ae0000
+buf_filesystem:821a0000
+tmp_img_start:82000000
+fs_offset:001a0000
+bootpara-----> 0
+para->BootParaCksum=   1e39b
+-----------------bootm 0x82000020
+## Booting image at 82000020 ...
+   Image Name:   Linux Kernel Image
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1655332 Bytes =  1.6 MB
+   Load Address: 80001000
+   Entry Point:  8000d430
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 8000d430) ...
+## Giving linux memsize in MB, 128
+
+Starting kernel ...
+
+怘�������fff��~��~fx������怘�怘�f����f����f�f���怘�f`������f����
+
+
