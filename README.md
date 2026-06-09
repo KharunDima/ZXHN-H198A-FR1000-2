@@ -38,11 +38,11 @@ make menuconfig
 ```
 Выберите:
 
-Target System: MediaTek Ralink MIPS
+- Target System: MediaTek Ralink MIPS
 
-Subtarget: MT7621 based boards
+- Subtarget: MT7621 based boards
 
-Target Profile: ZTE E8820S-SPI
+- Target Profile: ZTE E8820S-SPI
 
 LuCI: LuCI → Collections → luci (или luci-ssl)
 
