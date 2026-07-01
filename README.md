@@ -26,6 +26,7 @@
 ```bash
 cp patch/mt7621_zte_e8820s-spi.dts   target/linux/ramips/dts/   # DTS для NOR (опционально)
 cp patch/mt7621_zte_e8820s-nand.dts  target/linux/ramips/dts/   # DTS для NAND (опционально)
+cp patch/mt7621_zte_e8820s-nand256.dts  target/linux/ramips/dts/   # DTS для NAND256MB (опционально)
 cp patch/mt7621.mk                   target/linux/ramips/image/
 cp patch/leds                        target/linux/ramips/mt7621/base-files/etc/board.d/
 cp patch/upgrade.sh                  target/linux/ramips/mt7621/base-files/lib/upgrade/platform.sh
