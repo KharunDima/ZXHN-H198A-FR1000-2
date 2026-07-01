@@ -17,18 +17,17 @@
 
 1. **Клонируйте OpenWrt:**
    ```bash
-   git clone https://github.com/openwrt/openwrt.git
-   cd openwrt
-   git checkout v24.10.5   # или любая поддерживаемая версия
-   ./scripts/feeds update -a
-   ./scripts/feeds install -a
+   git clone --branch v25.12.5 --depth 1 https://git.openwrt.org/openwrt/openwrt.git 25.12.5
+   cd 25.12.5
+   ./scripts/feeds update -a && ./scripts/feeds install -a
+   wget https://downloads.openwrt.org/releases/25.12.5/targets/ramips/mt7621/config.buildinfo -O .config
    ```
 2. **Скопируйте файлы патчей:**
 
 ```bash
-cp patch/mt7621_zte_e8820s-spi.dts   target/linux/ramips/dts/   # DTS для NOR (опционально)
-cp patch/mt7621_zte_e8820s-nand.dts  target/linux/ramips/dts/   # DTS для NAND (опционально)
-cp patch/mt7621_zte_e8820s-nand256.dts  target/linux/ramips/dts/   # DTS для NAND256MB (опционально)
+cp patch/mt7621_zte_e8820s-spi.dts   target/linux/ramips/dts/
+cp patch/mt7621_zte_e8820s-nand.dts  target/linux/ramips/dts/
+cp patch/mt7621_zte_e8820s-nand256.dts  target/linux/ramips/dts/
 cp patch/mt7621.mk                   target/linux/ramips/image/
 cp patch/leds                        target/linux/ramips/mt7621/base-files/etc/board.d/
 cp patch/upgrade.sh                  target/linux/ramips/mt7621/base-files/lib/upgrade/platform.sh
