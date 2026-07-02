@@ -69,7 +69,7 @@ make -j$(nproc) defconfig download clean world
 | Vermagic | `35fb64ea09ee15c2f267bd5436b7f178` |
 | Собрано | с использованием pre-compiled toolchain OpenWrt (kernel 6.6.90) |
 
-> **Важно:** Vermagic данной сборки **отличается** от официальных релизов OpenWrt. Это означает, что пакеты из стандартных репозиториев не будут совместимы.
+> **Важно:** Vermagic совпадает с официальными сборками OpenWrt, что гарантирует совместимость с пакетами из официальных репозиториев.
 
 **Скачать:** [Релиз v25.12.5 на GitHub](https://github.com/KeiRun/ZXHN-H198A-FR1000-2/releases/tag/25.12.5)
 
