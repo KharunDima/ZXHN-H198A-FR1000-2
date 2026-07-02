@@ -59,9 +59,25 @@ make -j$(nproc) defconfig download clean world
 
 ---
 
+## Готовые прошивки для NAND/NOR
+
+Прошивки OpenWrt для устройства **ZXHN-H198A-FR1000-2**, собранные [KeiRun](https://github.com/KeiRun). Доступны варианты для разных типов флеш-памяти: NAND 128 МБ, NAND 256 МБ и NOR 64 МБ — выбирайте подходящий файл в релизе.
+
+| Параметр | Значение |
+|---|---|
+| Версия | v25.12.5 |
+| Vermagic | `35fb64ea09ee15c2f267bd5436b7f178` |
+| Собрано | с использованием pre-compiled toolchain OpenWrt (kernel 6.6.90) |
+
+> **Важно:** Vermagic данной сборки **отличается** от официальных релизов OpenWrt. Это означает, что пакеты из стандартных репозиториев не будут совместимы.
+
+**Скачать:** [Релиз v25.12.5 на GitHub](https://github.com/KeiRun/ZXHN-H198A-FR1000-2/releases/tag/25.12.5)
+
+Инструкции по установке смотрите в описании релиза по ссылке выше.
+
 ## Готовые прошивки для NAND
 
-Если ваше устройство всё ещё работает со стоковой NAND памятью, вы можете использовать уже собранные прошивки OpenWrt от [srt19](https://github.com/srt19).
+Прошивки OpenWrt для устройства **ZXHN-H198A-FR1000-2**, собранные [srt19](https://github.com/srt19). Доступны варианты флеш-памяти: NAND 128 МБ
 
 | Параметр | Значение |
 |---|---|
@@ -255,7 +271,6 @@ iw phy phy1 info | grep -E "^\s+\* [0-9]+\.0 MHz.*dBm" | head -5
 | Загрузчик | Flash | Источник |
 |---|---|---|
 | `breed/nand-breed.bin` | NAND | Breed |
-| `u-boot/dragonBluep-uboot-mt7621/` | NAND и NOR | DragonBluep |
 | `u-boot/yuzhii0718-uboot-mt7621-dhcpd/` | NAND и NOR | yuzhii0718 (с DHCPD) |
 
 ### Самостоятельная сборка U-Boot
@@ -320,3 +335,4 @@ iw phy phy1 info | grep -E "^\s+\* [0-9]+\.0 MHz.*dBm" | head -5
 
 - Оригинальная работа: [srt19/ZTE-E8820S](https://github.com/srt19/ZTE-E8820S)
 - Адаптация под SPI NOR и доработки: [KharunDima](https://github.com/KharunDima)
+- Адаптация под NAND и доработки: [srt19](https://github.com/srt19)
