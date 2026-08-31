@@ -96,6 +96,15 @@ make -j$(nproc) defconfig download clean world
 # Прошивка БЕЗ UART (Рекомендуемый способ: ZTE Toolkit)
 > **Вважно:** Это самый простой и безопасный способ установки загрузчика (Breed) и прошивки OpenWrt/Keenetic без необходимости паять UART-переходник. Все операции выполняются кликами в графическом интерфейсе Windows.
 
+### Скачать ZTE Toolkit
+
+| Архитектура Windows | Ожидаемое имя файла | Ссылка для скачивания |
+| :--- | :--- | :--- |
+| **64-бит (x64)**<br>*(Windows 10 / 11)* | `ZteToolkit_customer_x64.exe` | [ Скачать с MEGA](https://mega.nz/file/cV5VRSCS#IYiSzbj6abCoL8Y9y-ikUpHuyiE5Cou_E-p1V4RFmTU) |
+| **32-бит (x86)**<br>*(Windows 7 / 8 / 10)* | `ZteToolkit_customer_x86.exe` | [ Скачать с MEGA](https://mega.nz/file/EdwzTJzQ#hKTBxkVMlVlOIjOA3AubOTe0g-JiY2ZwG7z8v0sEevc) |
+
+> **Совет:** После скачивания обязательно нажмите на файл правой кнопкой мыши и выберите **«Запуск от имени администратора»**.
+
 ZTE Toolkit — инструкция для техника
 
 Программа для перепрошивки роутеров ZTE FR-1000-2 / H198A: сток → Breed
