@@ -518,3 +518,4 @@ iw phy phy1 info | grep -E "^\s+\* [0-9]+\.0 MHz.*dBm" | head -5
 - Оригинальная работа: [srt19/ZTE-E8820S](https://github.com/srt19/ZTE-E8820S)
 - Адаптация под SPI NOR и доработки: [KharunDima](https://github.com/KharunDima)
 - Адаптация под NAND и доработки: [srt19](https://github.com/srt19)
+- Разработка инструмента для прошивки без UART: ZTE Toolkit: [leksz97](https://4pda.to/forum/index.php?showuser=1518351)
