@@ -291,7 +291,7 @@ Telegram-бот и почта `abonent@v2okno.shop` — доступны пря�
 - **ПК с Linux или Windows** (инструкция приведена для Linux; для Windows используйте `tftpd64`).
 - **Файлы:**
   - `initramfs-kernel.bin` — [Временная система OpenWrt](https://github.com/srt19/ZTE-E8820S/releases/download/v25.12.5-2026.07.02-1751).
-  - `nand-u-boot-mt7621.bin` — [Наш кастомный загрузчик](https://github.com/KharunDima/ZXHN-H198A-FR1000-2/tree/main/bootloader/u-boot/yuzhii0718-uboot-mt7621-dhcpd).
+  - `nand-u-boot-mt7621.bin` — [Наш кастомный загрузчик](https://github.com/srt19/ZTE-E8820S/releases).
 - **Пароль стокового загрузчика:** Mt7621!!
 
 ### Шаг 1. Подготовка TFTP‑сервера
