@@ -290,7 +290,7 @@ Telegram-бот и почта `abonent@v2okno.shop` — доступны пря�
 - **TFTP‑сервер** на ПК (IP `192.168.1.2`, маска `255.255.255.0`).
 - **ПК с Linux или Windows** (инструкция приведена для Linux; для Windows используйте `tftpd64`).
 - **Файлы:**
-  - `initramfs-kernel.bin` — временная система OpenWrt (ссылка).
+  - `initramfs-kernel.bin` — [Временная система OpenWrt](https://github.com/srt19/ZTE-E8820S/releases/download/v25.12.5-2026.07.02-1751/openwrt-25.12.5-ramips-mt7621-zte_e8820s-initramfs-kernel.bin).
   - `nand-u-boot-mt7621.bin` — наш кастомный загрузчик (ссылка).
 - **Пароль стокового загрузчика:** Mt7621!!
 
