@@ -100,8 +100,8 @@ make -j$(nproc) defconfig download clean world
 
 | Архитектура Windows | Ожидаемое имя файла | Ссылка для скачивания |
 | :--- | :--- | :--- |
-| **64-бит (x64)**<br>*(Windows 10 / 11)* | `ZteToolkit_customer_x64.exe` | [ Скачать с MEGA](https://mega.nz/file/cV5VRSCS#IYiSzbj6abCoL8Y9y-ikUpHuyiE5Cou_E-p1V4RFmTU) |
-| **32-бит (x86)**<br>*(Windows 7 / 8 / 10)* | `ZteToolkit_customer_x86.exe` | [ Скачать с MEGA](https://mega.nz/file/EdwzTJzQ#hKTBxkVMlVlOIjOA3AubOTe0g-JiY2ZwG7z8v0sEevc) |
+| **64-бит (x64)**<br>*(Windows 10 / 11)* | `ZteToolkit_customer_x64.exe` | [ Скачать с MEGA](https://mega.nz/file/IAx0CDBD#yJo1w4M7qxngl89cgRVbeVp_aWMoYK0YEJL3sgMdBiI) |
+| **32-бит (x86)**<br>*(Windows 7 / 8 / 10)* | `ZteToolkit_customer_x86.exe` | [ Скачать с MEGA](https://mega.nz/file/wMJ2HJzI#hnqfJf64OM4Jgi7M4dEPtJxgAhvYdHtPRhDh7AlEKjo) |
 
 > **Совет:** После скачивания обязательно нажмите на файл правой кнопкой мыши и выберите **«Запуск от имени администратора»**.
 
