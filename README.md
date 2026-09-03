@@ -87,7 +87,7 @@ make -j$(nproc) defconfig download clean world
 
 > **Важно:** Vermagic совпадает с официальными сборками OpenWrt, что гарантирует совместимость с пакетами из официальных репозиториев.
 
-**Скачать:** [ZTE E8820S OpenWrt Firmware v25.12.4](https://github.com/srt19/ZTE-E8820S/releases/tag/v25.12.4-2026.05.15-1546)
+**Скачать:** [ZTE E8820S OpenWrt Firmware v25.12.5](https://github.com/srt19/ZTE-E8820S/releases/tag/v25.12.5-2026.07.02-1751)
 
 Инструкции по установке смотрите в описании релиза по ссылке выше.
 
@@ -290,7 +290,7 @@ Telegram-бот и почта `abonent@v2okno.shop` — доступны пря�
 - **TFTP‑сервер** на ПК (IP `192.168.1.2`, маска `255.255.255.0`).
 - **ПК с Linux или Windows** (инструкция приведена для Linux; для Windows используйте `tftpd64`).
 - **Файлы:**
-  - `initramfs-kernel.bin` — [Временная система OpenWrt](https://github.com/srt19/ZTE-E8820S/releases/download/v25.12.5-2026.07.02-1751).
+  - `initramfs-kernel.bin` — [Временная система OpenWrt](https://github.com/srt19/ZTE-E8820S/releases/tag/v25.12.5-2026.07.02-1751).
   - `nand-u-boot-mt7621.bin` — [Наш кастомный загрузчик](https://github.com/srt19/ZTE-E8820S/releases).
 - **Пароль стокового загрузчика:** Mt7621!!
 
