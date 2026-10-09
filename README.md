@@ -466,7 +466,7 @@ iw phy phy1 info | grep -E "^\s+\* [0-9]+\.0 MHz.*dBm" | head -5
 | Параметр | Значение |
 |---|---|
 | Flash type | `NOR` |
-| Partition table | `192k(u-boot),64k(u-boot-env),64k(factory),-(firmware)` |
+| Partition table | `512k(u-boot),512k(u-boot-env),256k(factory),-(firmware)` |
 | Kernel offset | `0x140000` |
 | Reset button GPIO | `18` |
 | System LED GPIO | `16` |
